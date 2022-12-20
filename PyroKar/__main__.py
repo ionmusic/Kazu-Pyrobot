@@ -29,8 +29,10 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             await bot.join_chat("Html12text")
+            await bot.join_chat("geteven")
             await bot.join_chat("Karc0de")
             await bot.join_chat("kazusupportgrp")
+            await bot.join_chat("SharingUserbot")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
